@@ -9,7 +9,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].bundle.js'
+        filename: '[name].bundle.js',
+        publicPath: '/bundle/'
     },
     plugins: [
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
@@ -20,6 +21,6 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
-        publicPath: './bundle'
+        publicPath: '/bundle/'
     }
 }
