@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ChenPri/webpack-practice#readme",
   "dependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.1.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
